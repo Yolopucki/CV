@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+body {
+    font-size: 24px;
+    font-family: 'EB Garamond', serif;
+    background: #D6E1DB;
+}
+a:visited{
+    color: #064f10;
+    font-weight: bold;
+}
+
+.wrapper {
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas: 'a m' 'a m' 'a m' 'a m';
+    grid-template-columns: 400px 1fr;
+    justify-content: center;
+}
+
+.skills, .languages {
+    display: grid;
+    grid-template-areas: 'l v' 'l v' 'l v' 'l v' 'l v' 'l v' 'l v';
+}
+
+.skills .labels,
+.languages .labels {
+    grid-area: l;
+    display: grid;
+}
+
+.skills .values,
+.languages .values {
+    grid-area: v;
+    display: grid;
+
+}
+
+#filterskills:checked ~ .skills label[for=html],
+#filterskills:checked ~ .skills #html,
+#filterlanguages:checked ~ .languages label[for=english],
+#filterlanguages:checked ~ .languages #english
+
+{
+    grid-row: 1/2;
+}
+
+#filterskills:checked ~ .skills label[for=css],
+#filterskills:checked ~ .skills #css,
+#filterlanguages:checked ~ .languages label[for=german],
+#filterlanguages:checked ~ .languages #german
+{
+    grid-row: 2/3;
+
+}
+
+#filterskills:checked ~ .skills label[for=js],
+#filterskills:checked ~ .skills #js {
+    grid-row: 3/4;
+}
+
+
+#filterskills:checked ~ .skills label[for=git],
+#filterskills:checked ~ .skills #git {
+    grid-row: 4/5;
+
+}
+
+#filterskills:checked ~ .skills label[for=scss],
+#filterskills:checked ~ .skills #scss {
+    grid-row: 5/6;
+
+}
+
+#filterskills:checked ~ .skills label[for=react],
+#filterskills:checked ~ .skills #react {
+    grid-row: 6/7;
+grid-gap: 5px;
+}
+
+#filterskills:checked ~ .skills label[for=markdown],
+#filterskills:checked ~ .skills #markdown {
+    grid-row: 7/8;
+
+}
+
+
+dl dt {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #294F1C;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #455C18;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #678926;
+}
+
+aside {
+    grid-area: a;
+    margin-left: 100px;
+}
+
+aside span {
+    font-size: 0.8rem;
+}
+
+aside img {
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+aside h3 {
+    display: inline-block;
+}
+
+main {
+    grid-area: m;
+    margin-left: 200px;
+}
+.courses li{
+    margin: 5px;
+}
