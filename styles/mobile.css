@@ -1,16 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
-
+/*general styles*/
 body {
-    font-size: 24px;
+    font-size: 16px;
     font-family: 'EB Garamond', serif;
     background: #D6E1DB;
 }
+h1 {
+    font-size: 30px;
+    color: #294F1C;
+    text-align: center;
+}
+h2 {
+    font-size: 24px;
+    color: #455C18;
+}
+h3 {
+    font-size: 19px;
+    color: #678926;
+}
+dl dt {
+    font-weight: bold;
+    color: #267326;
+}
 
+aside span {
+    font-size: 12px;
+}
+aside img {
+    width: 200px;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+aside h3 {
+    display: inline-block;
+}
 a:visited {
     color: #064f10;
     font-weight: bold;
 }
-
+/*making grid*/
 .wrapper {
     margin-top: 100px;
     display: grid;
@@ -18,7 +49,16 @@ a:visited {
     grid-template-columns: 1fr;
     justify-content: center;
 }
-
+aside {
+    grid-area: a;
+    margin-left: 40px;
+}
+main {
+    grid-area: m;
+    font-size: 16px;
+    margin-left: 40px;
+}
+/*styling buttons*/
 label[for=personal] h3,
 label[for=skills] h3,
 label[for=languages] h3,
@@ -47,7 +87,7 @@ label[for=expirience] h3 {
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
 }
-
+/*displaying and hiding text*/
 #personal:not(:checked) ~ .personal,
 #personal,
 #skills:not(:checked) ~ #filterskills,
@@ -66,124 +106,60 @@ label[for=expirience] h3 {
 #expirience {
     display: none;
 }
-.personal a {
-    font-size: 16px;
-}
-
+/*positioning range width text for filtering*/
 .skills, .languages {
     display: grid;
     grid-template-areas: 'l v' 'l v' 'l v' 'l v' 'l v' 'l v' 'l v';
 }
-
 .skills .labels,
 .languages .labels {
     grid-area: l;
     display: grid;
 }
-
 .skills .values,
 .languages .values {
     grid-area: v;
     display: grid;
-
 }
-
+input[type=range]{
+    width:150px;
+}
+/*filtering skills and languages*/
 #filterskills:checked ~ .skills label[for=html],
 #filterskills:checked ~ .skills #html,
 #filterlanguages:checked ~ .languages label[for=english],
 #filterlanguages:checked ~ .languages #english {
     grid-row: 1/2;
 }
-
 #filterskills:checked ~ .skills label[for=css],
 #filterskills:checked ~ .skills #css,
 #filterlanguages:checked ~ .languages label[for=german],
 #filterlanguages:checked ~ .languages #german {
     grid-row: 2/3;
-
 }
-
 #filterskills:checked ~ .skills label[for=js],
 #filterskills:checked ~ .skills #js {
     grid-row: 3/4;
 }
-
-
 #filterskills:checked ~ .skills label[for=git],
 #filterskills:checked ~ .skills #git {
     grid-row: 4/5;
-
 }
-
 #filterskills:checked ~ .skills label[for=scss],
 #filterskills:checked ~ .skills #scss {
     grid-row: 5/6;
-
 }
-
 #filterskills:checked ~ .skills label[for=react],
 #filterskills:checked ~ .skills #react {
     grid-row: 6/7;
     grid-gap: 5px;
 }
-
 #filterskills:checked ~ .skills label[for=markdown],
 #filterskills:checked ~ .skills #markdown {
     grid-row: 7/8;
-
 }
 
-
-dl dt {
-    font-weight: bold;
-    color: #267326;
-}
-
-h1 {
-    font-size: 30px;
-    color: #294F1C;
-    text-align: center;
-}
-
-h2 {
-    font-size: 24px;
-    color: #455C18;
-}
-
-h3 {
-    font-size: 17px;
-    color: #678926;
-}
-
-aside {
-    grid-area: a;
-    font-size: 16px;
-    margin-left: 40px;
-}
-
-aside span {
-    font-size: 12px;
-}
-
-aside img {
-    width: 200px;
-    display: block;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-aside h3 {
-    display: inline-block;
-}
-
-main {
-    grid-area: m;
-    font-size: 16px;
-    margin-left: 40px;
-}
 
 .courses li {
-    margin: 5px;
+    padding: 5px;
 }
