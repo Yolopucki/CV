@@ -19,9 +19,21 @@ h3 {
     font-size: 19px;
     color: #678926;
 }
-dl dt {
+a:visited {
+    color: #064f10;
     font-weight: bold;
-    color: #267326;
+}
+/*making grid*/
+.wrapper {
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas: 'a ' 'a' 'a' 'm' 'm' 'm';
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+aside {
+    grid-area: a;
+    margin-left: 40px;
 }
 .personalInfo{
     display: inline-block;
@@ -42,27 +54,18 @@ aside img {
 aside h3 {
     display: inline-block;
 }
-a:visited {
-    color: #064f10;
-    font-weight: bold;
-}
-/*making grid*/
-.wrapper {
-    margin-top: 100px;
-    display: grid;
-    grid-template-areas: 'a ' 'a' 'a' 'm' 'm' 'm';
-    grid-template-columns: 1fr;
-    justify-content: center;
-}
-aside {
-    grid-area: a;
-    margin-left: 40px;
-}
 main {
     grid-area: m;
     grid-gap:10px;
     font-size: 16px;
     margin-left: 40px;
+}
+.courses li {
+    padding: 5px;
+}
+dl dt {
+    font-weight: bold;
+    color: #267326;
 }
 /*styling buttons*/
 label[for=personal] h3,
@@ -162,6 +165,4 @@ input[type=range]{
 }
 
 
-.courses li {
-    padding: 5px;
-}
+
