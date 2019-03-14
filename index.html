@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
+  <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+  >
   <title>CV Orlyk</title>
   <link
       rel="stylesheet"
-      media="screen and (max-device-width: 799px)"
+      media="screen and (max-width: 799px)"
       href="./styles/mobile.css"
   />
-  <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="./styles/main.css" />
+  <link
+      rel="stylesheet"
+      media="screen and (min-width: 800px)"
+      href="./styles/main.css"
+  />
 </head>
 <body>
 <div class="wrapper">
@@ -17,156 +25,178 @@
         src="assets/Picture1.png"
         alt="Orlyk"
     />
+    <h1>Orlyk Viktor</h1>
+    <h2>Junior Front End Developer</h2>
 
-    <adress>
-      <input type="checkbox" id="personal">
-      <label for="personal"><h3>Personal info</h3></label>
-      <dl class="personal">
-        <dt>Address:</dt>
-        <dd>4 Kosmonavta Volkova St., Kyiv, Ukraine</dd>
-        <dt>Phone:</dt>
-        <dd>+380637713025</dd>
-        <dt>E-mail:</dt>
-        <dd><a href="mailto:victor.orlyk93@gmail.com<">victor.orlyk93@gmail.com</a></dd>
-        <dt>Social media</dt>
-        <dd>
-          <a
-              href="https://www.facebook.com/victor.orlyk"
-              name="sfd"
-              class="sdfsdf"
-              id="sfd"
-          >Facebook</a>
-          <br/>
-          <a href="https://github.com/Yolopucki">GitHub</a> <br/>
-          <a
-              href="https://www.linkedin.com/in/victor-orlyk-9bab5583/"
-          >Linkedin</a
+
+      <adress>
+        <input
+            type="checkbox"
+            id="personal"
+        >
+        <label for="personal">
+          <h3>Personal info</h3>
+        </label>
+        <dl class="personal">
+          <dt>Address:</dt>
+          <dd>4 Kosmonavta Volkova St., Kyiv, Ukraine</dd>
+          <dt>Phone:</dt>
+          <dd>+380637713025</dd>
+          <dt>E-mail:</dt>
+          <dd><a href="mailto:victor.orlyk93@gmail.com<">victor.orlyk93@gmail.com</a></dd>
+          <dt>Social media</dt>
+          <dd>
+            <a
+                href="https://www.facebook.com/victor.orlyk"
+                name="sfd"
+                class="sdfsdf"
+                id="sfd"
+            >Facebook</a>
+            <br/>
+            <a href="https://github.com/Yolopucki">GitHub</a> <br/>
+            <a
+                href="https://www.linkedin.com/in/victor-orlyk-9bab5583/"
+            >Linkedin</a
+            >
+          </dd>
+        </dl>
+      </adress>
+      <input
+          type="checkbox"
+          id="skills"
+      >
+      <label for="skills">
+        <h3>Skills</h3>
+      </label>
+      <input
+          type="checkbox"
+          id="filterskills"
+      >
+      <label for="filterskills"><span>sort by: high to low</span></label>
+      <div class="skills">
+        <div class="labels">
+          <label for="js">js</label>
+          <label for="html">html</label>
+
+          <label for="css">css</label>
+
+          <label for="scss">scss</label>
+
+          <label for="react">react</label>
+
+          <label for="git">git</label>
+
+          <label for="markdown">markdown</label>
+
+        </div>
+        <div class="values">
+          <input
+              type="range"
+              min="0"
+              max="100"
+              id="js"
+              value="50"
+              disabled
           >
-        </dd>
-      </dl>
-    </adress>
-    <input type="checkbox" id="skills">
-    <label for="skills"><h3>Skills</h3></label>
-    <input
-        type="checkbox"
-        id="filterskills"
-    >
-    <label for="filterskills"><span>sort by: high to low</span></label>
-    <div class="skills">
-      <div class="labels">
-        <label for="js">js</label>
-        <label for="html">html</label>
+          <input
+              type="range"
+              min="0"
+              max="100"
+              id="html"
+              value="80"
+              disabled
+          >
 
-        <label for="css">css</label>
-
-        <label for="scss">scss</label>
-
-        <label for="react">react</label>
-
-        <label for="git">git</label>
-
-        <label for="markdown">markdown</label>
-
+          <input
+              type="range"
+              min="0"
+              max="100"
+              id="css"
+              value="70"
+              disabled
+          >
+          <input
+              type="range"
+              min="0"
+              max="100"
+              id="scss"
+              value="40"
+              disabled
+          >
+          <input
+              type="range"
+              min="0"
+              max="100"
+              id="react"
+              value="30"
+              disabled
+          >
+          <input
+              type="range"
+              min="0"
+              max="100"
+              id="git"
+              value="40"
+              disabled
+          >
+          <input
+              type="range"
+              min="0"
+              max="100"
+              id="markdown"
+              value="20"
+              disabled
+          >
+        </div>
       </div>
-      <div class="values">
-        <input
-            type="range"
-            min="0"
-            max="100"
-            id="js"
-            value="50"
-            disabled
-        >
-        <input
-            type="range"
-            min="0"
-            max="100"
-            id="html"
-            value="80"
-            disabled
-        >
+      <input
+          type="checkbox"
+          id="languages"
+      >
+      <label for="languages">
+        <h3>Languages</h3>
+      </label>
 
-        <input
-            type="range"
-            min="0"
-            max="100"
-            id="css"
-            value="70"
-            disabled
-        >
-        <input
-            type="range"
-            min="0"
-            max="100"
-            id="scss"
-            value="40"
-            disabled
-        >
-        <input
-            type="range"
-            min="0"
-            max="100"
-            id="react"
-            value="30"
-            disabled
-        >
-        <input
-            type="range"
-            min="0"
-            max="100"
-            id="git"
-            value="40"
-            disabled
-        >
-        <input
-            type="range"
-            min="0"
-            max="100"
-            id="markdown"
-            value="20"
-            disabled
-        >
+      <input
+          type="checkbox"
+          id="filterlanguages"
+      >
+      <label for="filterlanguages"><span>sort by: high to low</span></label>
+      <div class="languages">
+        <div class="labels">
+          <label for="german">German</label>
+          <label for="english">English</label>
+        </div>
+        <div class="values">
+          <input
+              type="range"
+              min="0"
+              max="100"
+              id="german"
+              value="30"
+              disabled
+          >
+          <input
+              type="range"
+              min="0"
+              max="100"
+              id="english"
+              value="80"
+              disabled
+          >
+        </div>
       </div>
-    </div>
-    <input type="checkbox" id="languages">
-    <label for="languages"><h3>Languages</h3></label>
-
-    <input
-        type="checkbox"
-        id="filterlanguages"
-    >
-    <label for="filterlanguages"><span>sort by: high to low</span></label>
-    <div class="languages">
-      <div class="labels">
-        <label for="german">German</label>
-        <label for="english">English</label>
-      </div>
-      <div class="values">
-        <input
-            type="range"
-            min="0"
-            max="100"
-            id="german"
-            value="30"
-            disabled
-        >
-        <input
-            type="range"
-            min="0"
-            max="100"
-            id="english"
-            value="80"
-            disabled
-        >
-      </div>
-    </div>
 
   </aside>
   <main>
-    <h1>Orlyk Viktor</h1>
-    <h2>Junior Front End Developer</h2>
-    <input type="checkbox" id="education">
-    <label for="education"><h3>Education</h3></label>
+
+    <input
+        type="checkbox"
+        id="education"
+    >
+    <label for="education">
+      <h3>Education</h3>
+    </label>
     <dl class="education">
       <dt>PHP Academy</dt>
       <dd>July 2018 – March 2019 Full Stack Course (JS, CSS, HTML+PHP)</dd>
@@ -180,8 +210,13 @@
       <dt>Kyiv National University of Trade and Economics</dt>
       <dd>2011-2015 Obtained Bachelor Degree in Tourism</dd>
     </dl>
-    <input type="checkbox" id="courses">
-    <label for="courses"><h3>Completed online courses</h3></label>
+    <input
+        type="checkbox"
+        id="courses"
+    >
+    <label for="courses">
+      <h3>Completed online courses</h3>
+    </label>
     <ul class="courses">
       <li>
         <a
@@ -202,8 +237,13 @@
         >
       </li>
     </ul>
-    <input type="checkbox" id="expirience">
-    <label for="expirience"><h3>Work experience</h3></label>
+    <input
+        type="checkbox"
+        id="expirience"
+    >
+    <label for="expirience">
+      <h3>Work experience</h3>
+    </label>
     <dl class="expirience">
       <dt>
         Import manager in Industrial and Technical Holding Agromat LLC
@@ -221,5 +261,7 @@
     </dl>
   </main>
 </div>
+
+
 </body>
 </html>

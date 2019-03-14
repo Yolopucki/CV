@@ -14,22 +14,23 @@ a:visited {
 .wrapper {
     margin-top: 100px;
     display: grid;
-    grid-template-areas: 'a m' 'a m' 'a m' 'a m';
-    grid-template-columns: 400px 1fr;
+    grid-template-areas: 'a ' 'a' 'a' 'm' 'm' 'm';
+    grid-template-columns: 1fr;
     justify-content: center;
 }
 
 label[for=personal] h3,
 label[for=skills] h3,
 label[for=languages] h3 {
-    width: 175px;
+    width: 75%;
 }
 
 label[for=education] h3,
 label[for=courses] h3,
 label[for=expirience] h3 {
-    width: 370px;
-    margin-bottom: 63px;
+    width: 75%;
+    /*margin-bottom: 63px;*/
+    margin-left: 20px;
 }
 
 label[for=personal] h3,
@@ -68,6 +69,10 @@ label[for=expirience] h3 {
 #expirience:not(:checked) ~ .expirience,
 #expirience {
     display: none;
+}
+
+.personal a {
+    font-size: 0.6rem;
 }
 
 .skills, .languages {
@@ -142,12 +147,13 @@ dl dt {
 h1 {
     font-size: 4rem;
     color: #294F1C;
+    text-align: center;
 }
 
 h2 {
     font-size: 3rem;
     color: #455C18;
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
 }
 
 h3 {
@@ -157,7 +163,7 @@ h3 {
 
 aside {
     grid-area: a;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-left: 50px;
 }
 
@@ -169,6 +175,8 @@ aside img {
     width: 200px;
     margin-bottom: 20px;
     border-radius: 50%;
+    margin-left: 50%;
+    margin-right: 200px;
 }
 
 aside h3 {
